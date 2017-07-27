@@ -19,6 +19,7 @@ pod "JumpingJacker"
 ```swift
 import WatchKit
 import Foundation
+import JumpingJacker
 
 class InterfaceController: WKInterfaceController {
     var jumpingJacker: JumpingJacker = JumpingJacker(movementSensitivity: .normal)

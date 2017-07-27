@@ -21,17 +21,17 @@ import WatchKit
 import Foundation
 
 class InterfaceController: WKInterfaceController {
+    var jumpingJacker: JumpingJacker = JumpingJacker(movementSensitivity: .normal)
+    var jumpingJackCount: Int = 0
 
-var jumpingJacker: JumpingJacker = JumpingJacker(movementSensitivity: .normal)
-var jumpingJackCount: Int = 0
+    @IBOutlet var jumpingJackCountLabel: WKInterfaceLabel!
 
-@IBOutlet var jumpingJackCountLabel: WKInterfaceLabel!
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
 
-override func awake(withContext context: Any?) {
-    super.awake(withContext: context)
-
-    jumpingJacker.delegate = self
-    jumpingJacker.start()
+        jumpingJacker.delegate = self
+        jumpingJacker.start()
+    }
 }
 
 extension InterfaceController: JumpingJackerDelegate {
@@ -41,10 +41,10 @@ extension InterfaceController: JumpingJackerDelegate {
             self.jumpingJackCountLabel.setText(String(describing: self.jumpingJackCount))
         }
     }
-}
 
-func jumpingJacker(_ jumpingJacker: JumpingJacker, didFailWith error: Error) {
-    print(error.localizedDescription)
+    func jumpingJacker(_ jumpingJacker: JumpingJacker, didFailWith error: Error) {
+        print(error.localizedDescription)
+    }
 }
 
 ```

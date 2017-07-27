@@ -9,7 +9,7 @@
 import Foundation
 import CoreMotion
 
-fileprivate enum Direction {
+enum Direction {
     case Up, Down, Unknown
 }
 

@@ -36,7 +36,7 @@ public protocol JumpingJackerDelegate
 
 public class JumpingJacker
 {
-    var delegate: JumpingJackerDelegate?
+    public var delegate: JumpingJackerDelegate?
     
     var motionManager: CMMotionManager!
     var lastValueX: Double?
@@ -55,7 +55,7 @@ public class JumpingJacker
     ///
     /// - Parameter movementSensitivity: The sensitivity coefficient for the jumping jack movement. "Low" sensitivity means that a more exaggerated jumping jack movement is required to register a jumping jack.
     
-    init(movementSensitivity to: MovementSensitivity) {
+    public init(movementSensitivity to: MovementSensitivity) {
         self.sensitivity = to.rawValue
         self.motionManager = CMMotionManager()
     }

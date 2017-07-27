@@ -1,15 +1,9 @@
 # JumpingJacker
-
-[![CI Status](http://img.shields.io/travis/Nathan Chan/JumpingJacker.svg?style=flat)](https://travis-ci.org/Nathan Chan/JumpingJacker)
-[![Version](https://img.shields.io/cocoapods/v/JumpingJacker.svg?style=flat)](http://cocoapods.org/pods/JumpingJacker)
-[![License](https://img.shields.io/cocoapods/l/JumpingJacker.svg?style=flat)](http://cocoapods.org/pods/JumpingJacker)
-[![Platform](https://img.shields.io/cocoapods/p/JumpingJacker.svg?style=flat)](http://cocoapods.org/pods/JumpingJacker)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Jumping jack detector for ⌚️ (watchOS)
 
 ## Requirements
+- watchOS 3.0+
+- Xcode 8.0+
 
 ## Installation
 
@@ -18,6 +12,42 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "JumpingJacker"
+```
+
+## Example usage
+
+```swift
+import WatchKit
+import Foundation
+
+class InterfaceController: WKInterfaceController {
+
+var jumpingJacker: JumpingJacker = JumpingJacker(movementSensitivity: .normal)
+var jumpingJackCount: Int = 0
+
+@IBOutlet var jumpingJackCountLabel: WKInterfaceLabel!
+
+override func awake(withContext context: Any?) {
+super.awake(withContext: context)
+
+jumpingJacker.delegate = self
+jumpingJacker.start()
+}
+}
+
+extension InterfaceController: JumpingJackerDelegate {
+func jumpingJackerDidJumpingJack(_ jumpingJacker: JumpingJacker) {
+jumpingJackCount += 1
+DispatchQueue.main.async {
+self.jumpingJackCountLabel.setText(String(describing: self.jumpingJackCount))
+}
+}
+
+func jumpingJacker(_ jumpingJacker: JumpingJacker, didFailWith error: Error) {
+print(error.localizedDescription)
+}
+}
+
 ```
 
 ## Author

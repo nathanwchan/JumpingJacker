@@ -1,0 +1,6 @@
+framework module JumpingJacker {
+  umbrella header "JumpingJacker-umbrella.h"
+
+  export *
+  module * { export * }
+}

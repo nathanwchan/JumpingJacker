@@ -1,0 +1,6 @@
+framework module Pods_JumpingJacker_Tests {
+  umbrella header "Pods-JumpingJacker_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

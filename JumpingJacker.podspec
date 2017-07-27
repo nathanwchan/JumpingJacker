@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 Jumping jack detector for ⌚️ (watchOS).
                        DESC
 
-  s.homepage         = 'https://github.com/Nathan Chan/JumpingJacker'
+  s.homepage         = 'https://github.com/nathanwchan/JumpingJacker'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Nathan Chan' => 'nchan87@gmail.com' }

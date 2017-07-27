@@ -34,7 +34,7 @@ protocol JumpingJackerDelegate
     func jumpingJacker(_ jumpingJacker: JumpingJacker, didFailWith error: Error)
 }
 
-public class JumpingJacker
+class JumpingJacker
 {
     public var delegate: JumpingJackerDelegate?
     

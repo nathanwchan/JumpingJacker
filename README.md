@@ -28,24 +28,23 @@ var jumpingJackCount: Int = 0
 @IBOutlet var jumpingJackCountLabel: WKInterfaceLabel!
 
 override func awake(withContext context: Any?) {
-super.awake(withContext: context)
+    super.awake(withContext: context)
 
-jumpingJacker.delegate = self
-jumpingJacker.start()
-}
+    jumpingJacker.delegate = self
+    jumpingJacker.start()
 }
 
 extension InterfaceController: JumpingJackerDelegate {
-func jumpingJackerDidJumpingJack(_ jumpingJacker: JumpingJacker) {
-jumpingJackCount += 1
-DispatchQueue.main.async {
-self.jumpingJackCountLabel.setText(String(describing: self.jumpingJackCount))
-}
+    func jumpingJackerDidJumpingJack(_ jumpingJacker: JumpingJacker) {
+        jumpingJackCount += 1
+        DispatchQueue.main.async {
+            self.jumpingJackCountLabel.setText(String(describing: self.jumpingJackCount))
+        }
+    }
 }
 
 func jumpingJacker(_ jumpingJacker: JumpingJacker, didFailWith error: Error) {
-print(error.localizedDescription)
-}
+    print(error.localizedDescription)
 }
 
 ```

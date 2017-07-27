@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0E40A9956EBA1DDA2A6E2D8 /* Pods_JumpingJacker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAECC85C09E953B9B50C9BB7 /* Pods_JumpingJacker_Tests.framework */; };
+		D8708FBC1F2A98190066C206 /* JumpingJacker in Resources */ = {isa = PBXBuildFile; fileRef = D8708FBB1F2A98190066C206 /* JumpingJacker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		82E5F4F8F5DFC34C0AEB6DC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98FC3EE1B34B86E288C1737B /* Pods-JumpingJacker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JumpingJacker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JumpingJacker_Example/Pods-JumpingJacker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5B6F947D33902625206A30 /* JumpingJacker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JumpingJacker.podspec; path = ../JumpingJacker.podspec; sourceTree = "<group>"; };
+		D8708FBB1F2A98190066C206 /* JumpingJacker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JumpingJacker; sourceTree = "<group>"; };
 		E73E7293BE6286BAD79EB167 /* Pods_JumpingJacker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JumpingJacker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAECC85C09E953B9B50C9BB7 /* Pods_JumpingJacker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JumpingJacker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,6 +58,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				D8708FBB1F2A98190066C206 /* JumpingJacker */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD11AFB9204008FA782 /* Products */,
 				6C51D5870B511BDB69E97770 /* Pods */,
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8708FBC1F2A98190066C206 /* JumpingJacker in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

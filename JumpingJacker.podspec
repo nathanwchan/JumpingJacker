@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JumpingJacker'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Jumping jack detector for ⌚️ (watchOS)'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Jumping jack detector for ⌚️ (watchOS).
   s.author           = { 'Nathan Chan' => 'nchan87@gmail.com' }
   s.source           = { :git => 'https://github.com/nathanwchan/JumpingJacker.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.platform     = :watchos, '3.0'
 
   s.source_files = 'JumpingJacker/Classes/**/*'
   

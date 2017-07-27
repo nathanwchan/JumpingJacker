@@ -9,18 +9,18 @@
 import Foundation
 import CoreMotion
 
-enum Direction {
+fileprivate enum Direction {
     case Up, Down, Unknown
 }
 
 // The sensitivity coefficient for the jumping jack movement. "Low" sensitivity means that a more exaggerated jumping jack movement is required to register a jumping jack.
-enum MovementSensitivity: Double {
+public enum MovementSensitivity: Double {
     case low = 0.7
     case normal = 0.5
     case high = 0.3
 }
 
-protocol JumpingJackerDelegate
+public protocol JumpingJackerDelegate
 {
     /// Called when a jumping jack is completed
     ///

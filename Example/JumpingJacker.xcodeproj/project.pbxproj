@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DB3C1EA21F9A8C95CA67937 /* Pods_JumpingJacker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73E7293BE6286BAD79EB167 /* Pods_JumpingJacker_Example.framework */; };
 		A0E40A9956EBA1DDA2A6E2D8 /* Pods_JumpingJacker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAECC85C09E953B9B50C9BB7 /* Pods_JumpingJacker_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DB3C1EA21F9A8C95CA67937 /* Pods_JumpingJacker_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
